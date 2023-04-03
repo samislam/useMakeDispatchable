@@ -1,0 +1,31 @@
+{
+  "name": "usemakedispatchable",
+  "version": "1.0.0",
+  "description": "a react hook that takes a set of redux reducers and returns the same input reducers but wrapped with the redux disptch function ready to call",
+  "main": "./dist/index.js",
+  "type": "commonjs",
+  "types": "./@types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samislam/useMakeDispatchable.git"
+  },
+  "keywords": [
+    "dispatch",
+    "useDispatch",
+    "redux",
+    "redux-toolkit"
+  ],
+  "author": "Islam Yamor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samislam/useMakeDispatchable/issues"
+  },
+  "homepage": "https://github.com/samislam/useMakeDispatchable#readme",
+  "dependencies": {
+    "@types/react": "^18.0.32",
+    "typescript": "^5.0.3"
+  }
+}
