@@ -6,7 +6,9 @@
   "type": "commonjs",
   "types": "./@types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "build:dev": "npx tsc -w"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,9 @@
   },
   "homepage": "https://github.com/samislam/useMakeDispatchable#readme",
   "dependencies": {
+    "@samislam/checktypes": "^1.0.1",
     "@types/react": "^18.0.32",
+    "react-redux": "^8.0.5",
     "typescript": "^5.0.3"
   }
 }
