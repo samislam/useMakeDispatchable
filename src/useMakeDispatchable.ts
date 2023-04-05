@@ -12,19 +12,19 @@ function useMakeDispatchable(reducers: any): any {
       const DispatchableList = (reducers as ActionCreator<any>[]).map(
         (reducer) =>
           (...arg: any[]) =>
-            dispatch(reducer(arg))
+            dispatch(reducer(...arg))
       )
       return DispatchableList
     }
     case isObject(reducers): {
       const DispatchableList: any = {}
       for (const [key, value] of Object.entries(reducers as { [index: string]: ActionCreator<any> })) {
-        DispatchableList[key] = (...arg: any[]) => dispatch(value(arg))
+        DispatchableList[key] = (...arg: any[]) => dispatch(value(...arg))
       }
       return DispatchableList
     }
     default: // isAsycOrSyncFunc
-      return (...arg: any[]) => dispatch((reducers as ActionCreator<any>)(arg))
+      return (...arg: any[]) => dispatch((reducers as ActionCreator<any>)(...arg))
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "usemakedispatchable",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a react hook that takes a set of redux reducers and returns the same input reducers but wrapped with the redux disptch function ready to call",
   "main": "./dist/index.js",
   "type": "commonjs",
