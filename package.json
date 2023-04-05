@@ -1,10 +1,10 @@
 {
   "name": "usemakedispatchable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a react hook that takes a set of redux reducers and returns the same input reducers but wrapped with the redux disptch function ready to call",
   "main": "./dist/index.js",
   "type": "commonjs",
-  "types": "./@types/index.d.ts",
+  "types": "./@types/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
